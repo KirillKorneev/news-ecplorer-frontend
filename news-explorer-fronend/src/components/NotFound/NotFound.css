@@ -1,0 +1,46 @@
+.not-found {
+    background: #F5F6F7;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.not-found__icon {
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+.not-found__title {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Slab, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #1A1B22;
+}
+
+.not-found__text {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #B6BCBF;
+    width: 356px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .not-found__text {
+        font-size: 15px;
+        line-height: 20px;
+        width: 288px
+    }
+}

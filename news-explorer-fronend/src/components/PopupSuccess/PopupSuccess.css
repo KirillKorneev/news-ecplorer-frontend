@@ -1,0 +1,159 @@
+.form__label {
+    font-family: Inter, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2F71E5;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.form__label_el_email {
+    margin-top: 22px;
+}
+
+.form__label_el_pass {
+    margin-top: 31px;
+}
+
+.form__label_el_name {
+    margin-top: 31px;
+}
+
+.form__input {
+    font-family: Inter, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.form__input_el_email {
+    margin-top: 9px;
+}
+
+.form__input_el_pass {
+    margin-top: 8px;
+}
+
+.form__input_el_name {
+    margin-top: 8px;
+}
+
+.form__button {
+    background: #2F71E5;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    border-radius: 100px;
+    font-family: Roboto, Arial;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    margin-top: 39px;
+    height: 64px;
+    border: 0px;
+}
+
+.form__tag {
+    font-family: Inter, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 28px;
+}
+
+.form__transfer {
+    color: #2F71E5;
+}
+
+.form__tagger {
+    font-family: Inter, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2F71E5;
+    margin: 0;
+    padding: 0;
+    margin-top: 14px;
+    margin-bottom: 51px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.form {
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.form__title {
+    font-family: Roboto, Arial;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1A1B22;
+    width: 315px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 43px;
+}
+
+.form__error {
+    height: 14px;
+    left: 541px;
+    top: 345px;
+    font-family: Inter, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+    margin-top: 3px;
+}
+
+.form__button_disabled {
+    background: #E6E8EB;
+    color: #B6BCBF;
+}
+
+.form__label_valid {
+    margin-top: 10px;
+}
+
+.form__button_valid {
+    margin-top: 18px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 550px) {
+    .form {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .form__title {
+        margin-top: 16px;
+    }
+
+    .form__button {
+        margin-top: 31px;
+    }
+}
