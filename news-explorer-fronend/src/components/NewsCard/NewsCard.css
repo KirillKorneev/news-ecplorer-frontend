@@ -1,0 +1,274 @@
+@keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.element {
+    width: 400px;
+    height: 576px;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+}
+
+.element__photo {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.element__info {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.element__data {
+    margin: 0px;
+    padding: 0px;
+    font-family: Source Sans Pro, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    color: #B6BCBF;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.element__title {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto Slab, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    color: #1A1B22;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.element__text {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.element__source {
+    font-family: Roboto Slab, Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    text-decoration: none;
+    text-align: left;
+}
+
+.element__bookmark {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 8px;
+    background-color: white;
+    top: 24px;
+    left: calc(100% - 40px - 24px);
+    background-image: url(../../images/bookmark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.element__key-word {
+    position: absolute;
+    width: auto;
+    border: 0;
+    border-radius: 8px;
+    background-color: white;
+    top: 24px;
+    right: 1;
+    margin: 0;
+    padding: 0;
+    margin-left: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Roboto, Arial;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.element__notion {
+    margin: 0px;
+    padding: 0px;
+    width: 182px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    align-items: center;
+    top: 24px;
+    left: calc(100% - 182px - 24px - 40px - 5px);
+    border-radius: 10px;
+    display: none;
+}
+
+.element__notion_open {
+    display: flex;
+    animation: showBlock 0.5s linear forwards;
+}
+
+.element__warning {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, Arial;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+    transition: visibility 0.5s, opacity 0.5s linear;
+    -moz-transition: all 0.5s;
+}
+
+.element__bookmark_blue {
+    background-image: url(../../images/bookmate_blue.svg);
+    animation: showBlock 0.5s linear forwards;
+}
+
+.element__bookmark_delete {
+    background-image: url(../../images/trash.svg);
+}
+
+.element_hidden {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    .element {
+        width: 224px;
+        height: 420px;
+        margin: auto;
+    }
+
+    .element__photo {
+        height: 150px;
+    }
+
+    .element__text {
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        height: 88px;
+    }
+
+    .element__title {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        height: 72px;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+
+    .element__info {
+        margin-top: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        height: 100%;
+    }
+
+    .element__text {
+        margin-bottom: 12px;
+    }
+
+    .element__bookmark {
+        top: 8px;
+        left: calc(100% - 40px - 8px);
+    }
+
+    .element__notion {
+        width: 120px;
+        height: 40px;
+        top: 8px;
+        left: calc(100% - 120px - 8px - 40px - 5px);
+    }
+
+    .element__warning {
+        font-size: 7px;
+        line-height: 12px;
+    }
+
+    .element__key-word {
+        top: 8px;
+        right: 1;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .element {
+        width: 288px;
+        height: 440px;
+    }
+
+    .element__photo {
+        height: 150px;
+    }
+
+    .element__text {
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        height: 88px;
+    }
+
+    .element__title {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        height: 72px;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+
+    .element__info {
+        margin-top: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        height: 100%;
+    }
+
+    .element__text {
+        margin-bottom: 12px;
+    }
+}

@@ -1,0 +1,118 @@
+.about {
+    background: #FFFFFF;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about__content {
+    max-width: 1232px;
+    margin: auto;
+    display: flex;
+}
+
+.about__avatar {
+    height: 464px;
+    width: 464px;
+    border-radius: 1000px;
+}
+
+.about__info {
+    margin-left: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__title {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto Slab, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+    margin-top: 51px;
+}
+
+.about__text {
+    margin: 0px;
+    padding: 0px;
+    max-width: 600px;
+    font-family: Roboto, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    .about__avatar {
+        height: 232px;
+        width: 232px;
+        border-radius: 1000px;
+    }
+
+    .about {
+        padding-right: 104px;
+        padding-left: 104px;
+    }
+
+    .about__title {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 930px) {
+    .about {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .about__text {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 16px;
+    }
+
+    .about__info {
+        margin-left: 32px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .about {
+        padding-top: 32px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .about__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__title {
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 24px;
+    }
+
+    .about__text {
+        width: 100%;
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .about__info {
+        margin-left: 0px;
+    }
+
+    .about__avatar {
+        width: 272px;
+        height: 272px;
+    }
+}
