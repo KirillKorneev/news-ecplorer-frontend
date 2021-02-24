@@ -58,6 +58,16 @@
     background: #2A65CC;
 }
 
+.search__error {
+    font-family: Inter, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 15px;
+    color: #FF0000;
+    margin-top: 5px;
+}
+
 @media screen and (min-width: 470px) and (max-width: 768px) {
     .search {
         width: 448px;

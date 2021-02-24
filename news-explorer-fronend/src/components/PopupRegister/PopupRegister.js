@@ -101,6 +101,7 @@ function PopupRegister(props) {
             [name]: value
         }))
     }
+
     function handleSubmit(e) {
         e.preventDefault();
         const { email, name, password } = data;
@@ -110,7 +111,6 @@ function PopupRegister(props) {
         }
 
         props.register(email, name, password);
-
         setData({
             email: '',
             name: '',
@@ -221,6 +221,7 @@ function PopupRegister(props) {
                     check(name) ? <span className="form__error"></span> : 
                     errors.name.minLength && <span className="form__error">Минимальное количество символов - 2!</span>
                 }
+                <span className="form__server-error">{`${props.error}`}</span>
                 <button type="submit" className={`form__button ${isSubmitDisabled ? 'form__button_disabled' : ''} 
                     ${
                         check(name) ? '' : isNameInvalid ? 'form__button_valid' : ''

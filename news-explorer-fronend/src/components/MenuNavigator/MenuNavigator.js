@@ -1,5 +1,6 @@
 import React from 'react';
 import './MenuNavigator.css';
+import { Link } from 'react-router-dom';
 
 function MenuNavigator(props) {
 
@@ -22,10 +23,10 @@ function MenuNavigator(props) {
                     <button className='menu__close' onClick={props.onClose}></button>
                 </div>
                 <nav className='menu__nav'>
-                    <a href="/" className='menu__href'>Главная</a>
+                    <Link to="/" className='menu__href'>Главная</Link>
                     {
                         props.isLogin ? 
-                        <a href="/saved-news" className="menu__href">Сохраненные статьи</a> : ''
+                        <Link to="/saved-news" className="menu__href">Сохраненные статьи</Link> : ''
                     }
                     <button className='menu__button' onClick={handleLogin}>
                         {
