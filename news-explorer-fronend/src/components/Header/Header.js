@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 import { CurrentUserContext } from '../../context/currentUserContext.js';
 
 function Header(props) {
@@ -30,16 +31,16 @@ function Header(props) {
     return (
         <header className={`header ${props.isSaved ? 'header_saved' : ''}`}>
             <div className={`header__content ${props.isSaved ? `header__content_login` : ''}`}>
-                <a href="/" className={`header__logo ${props.isSaved ? 'header__logo_login' : ''}`}>NewsExplorer</a>
+                <Link to="/" className={`header__logo ${props.isSaved ? 'header__logo_login' : ''}`}>NewsExplorer</Link>
                 <div className="header__info">
-                    <a href="/" className={`header__href ${props.isSaved ? 'header__href_login' : ''}`} style={styleForMainPage} >Главная</a>
+                    <Link to="/" className={`header__href ${props.isSaved ? 'header__href_login' : ''}`} style={styleForMainPage} >Главная</Link>
                     {
-                        props.isLogin ? <a href="/saved-news" className={`header__href ${props.isSaved ? 'header__href_login' : ''}`} style={styleForAnotherPage}>Сохранённые статьи</a> : ''
+                        props.isLogin ? <Link to="/saved-news" className={`header__href ${props.isSaved ? 'header__href_login' : ''}`} style={styleForAnotherPage}>Сохранённые статьи</Link> : ''
                     }
                     <button onClick={handleLogin} className={`header__button ${props.isSaved ? 'header__button_login' : ''}`}>
                         {props.isLogin ? 
                             <div className="header__button-info">
-                                <p className="header__sign">{currentUser.name}</p>
+                                <p className="header__sign">{`${currentUser}`}</p>
                                 <div className={`header__mark ${props.isSaved ? '' : 'header__mark_saved'}`}></div>
                             </div> : 
                             <div className="header__button-info">

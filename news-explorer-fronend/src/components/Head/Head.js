@@ -12,14 +12,18 @@ function Head(props) {
             <Route path="/saved-news">
                 <section className="head head_saved">
                     <Header 
-                        isLogin = {props.isLogin || true}
+                        isLogin = {props.isLogin}
                         popupLoginOpen = {props.popupLoginOpen}
                         unLogin = {props.unLogin}
                         isSaved = {true}
                         menuOpen = {props.menuOpen}
                         isMain = {false}
                     />
-                    <SavedInfo />
+                    <SavedInfo 
+                        keyWords = {props.keyWords}
+                        keyWordsArray = {props.keyWordsArray}
+                        articles = {props.articles}
+                    />
                 </section>
             </Route>
             <Route path="/">
@@ -37,6 +41,7 @@ function Head(props) {
                         <p className="head__text">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
                         <Search 
                             searchNews = {props.searchNews}
+                            keyWordInput = {props.keyWordInput}
                         />
                     </div>
                 </section>

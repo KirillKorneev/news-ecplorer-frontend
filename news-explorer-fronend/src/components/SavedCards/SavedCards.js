@@ -6,28 +6,26 @@ import * as infoTransform from '../../utils/infoTransformer.js';
 
 function SavedCards(props) {
 
-    function isSaved(card) {
-        return (card.isSaved ? 
-            <NewsCard 
-                photo = {card.urlToImage}
-                data = {infoTransform.dataTransform(card.publishedAt)}
-                title = {infoTransform.titleTransform(card.title)}
-                text = {infoTransform.textTransform(card.content)}
-                source = {card.source.name}
-                link = {card.url}
-                key = {card.url}
-                keyWord = {card.keyWord}
-                isLogin = {props.isLogin}
-                isMain = {false}
-            /> : '');
-    }
-
+    //props.setIsResult(false);
     return (
         <section className="saved-cards">
             <ul className="saved-cards__content">
                 {
-                    props.cards.map((card) =>
-                        isSaved(card)
+                    props.articles.map((card) =>
+                        <NewsCard 
+                            id = {card._id}
+                            photo = {card.image}
+                            data = {card.date}
+                            title = {card.title}
+                            text = {card.text}
+                            source = {card.source}
+                            link = {card.link}
+                            key = {card.link}
+                            keyWord = {card.keyword}
+                            isLogin = {props.isLogin}
+                            isMain = {false}
+                            deleteArticle = {props.deleteArticle}
+                        />
                     )
                 }
             </ul>

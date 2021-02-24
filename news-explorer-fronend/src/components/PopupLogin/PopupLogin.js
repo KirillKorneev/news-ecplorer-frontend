@@ -93,7 +93,7 @@ function PopupLogin(props) {
         if (!email || !password){
             return;
         }
-
+        
         props.login(email, password);
 
         setData({
@@ -177,6 +177,7 @@ function PopupLogin(props) {
                     check(password) ? <span className="form__error"></span> : 
                     showPasswordError()
                 }
+                <span className="form__server-error">{`${props.error}`}</span>
                 <button type='submit' className={`form__button ${isSubmitDisabled ? 'form__button_disabled' : ''} 
                     ${
                         check(password) ? '' : isPasswordInvalid ? 'form__button_valid' : ''

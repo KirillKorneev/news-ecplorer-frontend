@@ -145,6 +145,20 @@
     margin-top: 18px;
 }
 
+.form__server-error {
+  font-family: Inter, Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FF0000;
+  position: absolute;
+  width: 200px;
+  bottom: 135px;
+  right: 115px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 550px) {
     .form {
         margin-left: 16px;

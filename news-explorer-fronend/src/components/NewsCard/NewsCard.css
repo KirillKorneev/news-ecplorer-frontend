@@ -21,6 +21,8 @@
 .element__photo {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    height: 272px;
+    width: 400px;
 }
 
 .element__info {
@@ -182,6 +184,7 @@
 
     .element__photo {
         height: 150px;
+        width: 224px;
     }
 
     .element__text {
@@ -243,6 +246,7 @@
 
     .element__photo {
         height: 150px;
+        width: 288px;
     }
 
     .element__text {
